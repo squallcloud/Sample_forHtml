@@ -1,0 +1,22 @@
+﻿<html>
+
+<head>
+    <title>WebStorageサンプル</title>
+    <script text="javascript" src="library/jquery.js"></script>
+    <script text="javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <button id="save_button">セーブ</button>
+    <button id="clear_button">クリア</button>
+    <script>
+        $('#save_button').click(function(){
+            saveLocalStorage();
+        });
+        $('#clear_button').click(function(){
+            clearLocalStorage();
+        });
+    </script>
+</body>
+
+</html>

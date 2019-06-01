@@ -1,0 +1,30 @@
+﻿<html>
+
+<head>
+    <title>WebStorageサンプル</title>
+    <script text="javascript" src="library/jquery.js"></script>
+    <script text="javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <button id="save_button">セーブ</button>
+    <button id="clear_button">クリア</button>
+    <div id="text-button">
+        <p id="text">クリック</p>
+    </div>
+    <script>
+
+        var obj = getLocalStorage();
+
+        console.log(obj);
+
+        document.getElementById("save_button").onclick = function () {
+            saveLocalStorage();
+        };
+        document.getElementById('clear_button').onclick = function() {
+            clearLocalStorage();
+        };
+    </script>
+</body>
+
+</html>
